@@ -60,11 +60,11 @@ public class CourseCatalogTest {
 	    catalogPOM.sendPassword("Gautham@123");
 	    catalogPOM.clickLoginBtn(); 
 	    catalogPOM.clickOnCourses();
-	    catalogPOM.sendSearchCourse("JavaOnlineTest");
+	    catalogPOM.sendSearchCourse("TestJAVA");
 	    catalogPOM.clickSearchBtn();
 	    catalogPOM.clickSubscribe();
 	    screenShot.captureScreenShot("Third");
-	   	String expectedText = "You have been registered to course: JavaOnlineTest";
+	   	String expectedText = "You have been registered to course: TestJAVA";
 		WebElement actual = driver.findElement(By.xpath("//DIV[@class='alert alert-info']"));
 		String actualText = actual.getText();
 		assertEquals(actualText, expectedText);
