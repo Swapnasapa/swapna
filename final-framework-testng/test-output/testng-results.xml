@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73754" started-at="2019-01-14T10:49:16Z" finished-at="2019-01-14T10:50:30Z">
+  <suite name="Default suite" duration-ms="46056" started-at="2019-01-21T06:34:09Z" finished-at="2019-01-21T06:34:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73754" started-at="2019-01-14T10:49:16Z" finished-at="2019-01-14T10:50:30Z">
-      <class name="com.training.sanity.tests.TeacherPasswordResetTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TeacherPasswordResetTest@66a3ffec]" name="setUpBeforeClass" is-config="true" duration-ms="10034" started-at="2019-01-14T10:49:16Z" finished-at="2019-01-14T10:49:26Z">
+    <test name="Default test" duration-ms="46056" started-at="2019-01-21T06:34:09Z" finished-at="2019-01-21T06:34:56Z">
+      <class name="com.training.sanity.tests.CreateThreadTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="setUp" is-config="true" duration-ms="7539" started-at="2019-01-21T06:34:09Z" finished-at="2019-01-21T06:34:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="resetPasswordTest()[pri:1, instance:com.training.sanity.tests.TeacherPasswordResetTest@66a3ffec]" name="resetPasswordTest" duration-ms="51393" started-at="2019-01-14T10:49:26Z" finished-at="2019-01-14T10:50:17Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="studentLogin()[pri:1, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="studentLogin" duration-ms="3576" started-at="2019-01-21T06:34:17Z" finished-at="2019-01-21T06:34:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resetPasswordTest -->
-        <test-method status="PASS" signature="testTeacherLogin()[pri:2, instance:com.training.sanity.tests.TeacherPasswordResetTest@66a3ffec]" name="testTeacherLogin" duration-ms="10433" started-at="2019-01-14T10:50:17Z" finished-at="2019-01-14T10:50:28Z">
+        </test-method> <!-- studentLogin -->
+        <test-method status="PASS" signature="uploadAssignment()[pri:2, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="uploadAssignment" duration-ms="33173" started-at="2019-01-21T06:34:21Z" depends-on-methods="com.training.sanity.tests.CreateThreadTest.studentLogin" finished-at="2019-01-21T06:34:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTeacherLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TeacherPasswordResetTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="1863" started-at="2019-01-14T10:50:28Z" finished-at="2019-01-14T10:50:30Z">
+        </test-method> <!-- uploadAssignment -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="1737" started-at="2019-01-21T06:34:54Z" finished-at="2019-01-21T06:34:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.TeacherPasswordResetTest -->
+      </class> <!-- com.training.sanity.tests.CreateThreadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
