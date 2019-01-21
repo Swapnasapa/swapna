@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46056" started-at="2019-01-21T06:34:09Z" finished-at="2019-01-21T06:34:56Z">
+  <suite name="Default suite" duration-ms="32416" started-at="2019-01-21T11:24:43Z" finished-at="2019-01-21T11:25:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46056" started-at="2019-01-21T06:34:09Z" finished-at="2019-01-21T06:34:56Z">
-      <class name="com.training.sanity.tests.CreateThreadTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="setUp" is-config="true" duration-ms="7539" started-at="2019-01-21T06:34:09Z" finished-at="2019-01-21T06:34:17Z">
+    <test name="Default test" duration-ms="32416" started-at="2019-01-21T11:24:43Z" finished-at="2019-01-21T11:25:15Z">
+      <class name="com.training.sanity.tests.ChatWithMemberTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.ChatWithMemberTest@66a3ffec]" name="setUp" is-config="true" duration-ms="10699" started-at="2019-01-21T11:24:43Z" finished-at="2019-01-21T11:24:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="studentLogin()[pri:1, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="studentLogin" duration-ms="3576" started-at="2019-01-21T06:34:17Z" finished-at="2019-01-21T06:34:21Z">
+        <test-method status="PASS" signature="studentLogin()[pri:1, instance:com.training.sanity.tests.ChatWithMemberTest@66a3ffec]" name="studentLogin" duration-ms="3636" started-at="2019-01-21T11:24:53Z" finished-at="2019-01-21T11:24:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- studentLogin -->
-        <test-method status="PASS" signature="uploadAssignment()[pri:2, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="uploadAssignment" duration-ms="33173" started-at="2019-01-21T06:34:21Z" depends-on-methods="com.training.sanity.tests.CreateThreadTest.studentLogin" finished-at="2019-01-21T06:34:54Z">
+        <test-method status="PASS" signature="sendMessage()[pri:2, instance:com.training.sanity.tests.ChatWithMemberTest@66a3ffec]" name="sendMessage" duration-ms="16314" started-at="2019-01-21T11:24:57Z" depends-on-methods="com.training.sanity.tests.ChatWithMemberTest.studentLogin" finished-at="2019-01-21T11:25:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadAssignment -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.CreateThreadTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="1737" started-at="2019-01-21T06:34:54Z" finished-at="2019-01-21T06:34:56Z">
+        </test-method> <!-- sendMessage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ChatWithMemberTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="1738" started-at="2019-01-21T11:25:13Z" finished-at="2019-01-21T11:25:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.CreateThreadTest -->
+      </class> <!-- com.training.sanity.tests.ChatWithMemberTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
