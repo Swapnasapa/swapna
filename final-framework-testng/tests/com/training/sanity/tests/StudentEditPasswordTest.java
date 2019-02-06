@@ -55,7 +55,7 @@ public class StudentEditPasswordTest {
   @Test(priority=1)
 	public void studentLoginTest() {
 		studentPOM.sendUserName("swapna9");
-		studentPOM.sendPassword("Gautham@143");
+		studentPOM.sendPassword("Gautham@123");
 		studentPOM.clickLoginBtn(); 
 		studentPOM.clickEditProfile();
 		screenShot.captureScreenShot("First");
@@ -64,9 +64,9 @@ public class StudentEditPasswordTest {
   //Edit student profile and change the password
   @Test(dependsOnMethods="studentLoginTest", priority=2)
 	public void editPasswordTest() {
-	    studentPOM.sendOldPassword("Gautham@143");
-		studentPOM.sendNewPassword("Gautham@123");
-		studentPOM.sendConfPassword("Gautham@123");
+	    studentPOM.sendOldPassword("Gautham@123");
+		studentPOM.sendNewPassword("Gautham@143");
+		studentPOM.sendConfPassword("Gautham@143");
 		studentPOM.clickSaveBtn(); 
 		screenShot.captureScreenShot("second");
 		String expectedText = "Your new profile has been saved";

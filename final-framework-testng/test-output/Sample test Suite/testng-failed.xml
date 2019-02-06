@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]">
-  <test name="Sample test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]" parallel="tests">
+  <test thread-count="2" name="SampleTest2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.training.regression.tests.LoginDBTest">
+      <class name="com.training.sanity.tests.StudentCourseDetailsTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginDBTest"/>
-          <include name="setUp"/>
           <include name="setUpBeforeClass"/>
+          <include name="searchCatalogTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.training.regression.tests.LoginDBTest -->
+      </class> <!-- com.training.sanity.tests.StudentCourseDetailsTest -->
     </classes>
-  </test> <!-- Sample test(failed) -->
+  </test> <!-- SampleTest2(failed) -->
+  <test thread-count="2" name="SampleTest1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.training.sanity.tests.StudentLogoutTest">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="studentLogout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.StudentLogoutTest -->
+    </classes>
+  </test> <!-- SampleTest1(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->

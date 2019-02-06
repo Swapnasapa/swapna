@@ -9,6 +9,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import static org.testng.Assert.assertEquals;
 
@@ -32,14 +33,14 @@ public class StudentCourseDetailsTest {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-
-@BeforeClass
+ 
+  @BeforeClass
 	public void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		coursePOM = new StudentCourseDetailsPOM(driver); 
+	 	driver = DriverFactory.getDriver(DriverNames.CHROME);
+	 	coursePOM = new StudentCourseDetailsPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -54,7 +55,7 @@ public class StudentCourseDetailsTest {
          coursePOM.sendPassword("Gautham@123");
          coursePOM.clickLoginBtn(); 
          coursePOM.clickMyCourses();
-         coursePOM.clickOneCourse("SELENIUM FRAMEWORK");
+         coursePOM.clickOneCourse("SELENIUM PROJECT");
          screenShot.captureScreenShot("Seventh");
      	String expected = "Selenium is an automation tool";
 	 	String actual = driver.findElement(By.xpath("//P[text()='Selenium is an automation tool']")).getText();

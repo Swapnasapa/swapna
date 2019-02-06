@@ -28,8 +28,8 @@ private WebDriver driver;
 	@FindBy(id="formLogin_submitAuth")
 	private WebElement loginBtn; 
 	
-	@FindBy(xpath="//A[@href='http://elearning.hommelle.com/main/auth/profile.php']")
-	private WebElement editProf; 
+	@FindBy(xpath="//A[@href='http://elearning.upskills.in/main/auth/profile.php']")
+ 	private WebElement editProf; 
 	
 	@FindBy(name="password0")
 	private WebElement password0;

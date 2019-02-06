@@ -63,7 +63,7 @@ public class StudentTakeTest {
   @Test(priority=2, dependsOnMethods="studentLogin")
    public void studentTakeTest()
    {   studentPOM.clickOnCourses();
-	    studentPOM.sendSearchCourse("SELENIUM PROJECT");
+	    studentPOM.sendSearchCourse("SELENIUM COMPLEX");
 	    studentPOM.clickSearchBtn();
 	    studentPOM.clickCourseLink();
 	    studentPOM.clickOnTests();

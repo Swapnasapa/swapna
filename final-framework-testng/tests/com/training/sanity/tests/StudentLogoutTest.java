@@ -9,6 +9,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import static org.testng.Assert.assertEquals;
 
@@ -33,13 +34,13 @@ public class StudentLogoutTest {
 		driver.quit();
 	}
 
-@BeforeClass
+ @BeforeClass
 	public void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		logoutPOM = new StudentLogoutPOM(driver); 
+	 	 driver = DriverFactory.getDriver(DriverNames.CHROME);
+	 	logoutPOM = new StudentLogoutPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 

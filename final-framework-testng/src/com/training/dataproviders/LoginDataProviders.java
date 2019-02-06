@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
+import com.training.bean.CategoryBean;
 import com.training.bean.LoginBean;
 import com.training.dao.ELearningDAO;
 import com.training.readexcel.ApachePOIExcelRead;
@@ -30,9 +31,36 @@ public class LoginDataProviders {
 		return result;
 	}
 	
+	@DataProvider(name = "db-inputs1")
+	public Object [][] getDBData1() {
+
+		List<CategoryBean> list = new ELearningDAO().getCategories(); 
+		
+		Object[][] result = new Object[list.size()][]; 
+		int count = 0; 
+		for(CategoryBean temp : list){
+			Object[]  obj = new Object[4]; 
+			obj[0] = temp.getCatecode(); 
+			obj[1] = temp.getCatename(); 
+			obj[2] = temp.getCoursetitle(); 
+			obj[3] = temp.getCoursecode(); 
+			
+			result[count ++] = obj; 
+		}
+		
+		
+		return result;
+	}
+	
 	@DataProvider(name = "excel-inputs")
 	public Object[][] getExcelData(){
-		String fileName ="C:/Users/Naveen/Desktop/Testing.xlsx"; 
+		String fileName ="C:\\Users\\SWAPNAPOONEPALLI\\Desktop\\TestData.xlsx"; 
+		return new ApachePOIExcelRead().getExcelContent(fileName); 
+	}
+	
+	@DataProvider(name = "excel-inputs1")
+	public Object[][] getExcelData1(){
+		String fileName ="C:\\Users\\SWAPNAPOONEPALLI\\Desktop\\TestData1.xlsx"; 
 		return new ApachePOIExcelRead().getExcelContent(fileName); 
 	}
 	

@@ -33,7 +33,7 @@ private WebDriver driver;
 	@FindBy(xpath="//BUTTON[@class='btn btn-default']")
 	private WebElement searchBtn;
 
-	@FindBy(xpath="//A[@title='SELENIUM PROJECT'][text()='SELENIUM PROJECT']")
+	@FindBy(xpath="//A[@title='SELENIUM COMPLEX'][text()='SELENIUM COMPLEX']")
 	private WebElement courseLink;
 
 	@FindBy(linkText="Tests")
